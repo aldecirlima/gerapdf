@@ -1,6 +1,6 @@
 package br.com.bb.seguranca.gerapdf;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +27,7 @@ public class AppItextPDF {
 		try {
 			rel.geraRelatorio();
 			
-		} catch (FileNotFoundException | DocumentException e) {
+		} catch (DocumentException | IOException e) {
 			e.printStackTrace();
 		} 
 
